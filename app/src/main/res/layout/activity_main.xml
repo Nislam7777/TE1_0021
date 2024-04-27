@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txt_edit_stb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Stambuk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_edit_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_edit_stb" />
+
+    <TextView
+        android:id="@+id/textNilaiAkhir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nilai Akhir"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_edit_nama" />
+
+    <TextView
+        android:id="@+id/txt_nilai_akhir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_edit_nama"
+        app:layout_constraintLeft_toRightOf="@id/textNilaiAkhir"/>
+
+    <TextView
+        android:id="@+id/textIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indeks"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textNilaiAkhir" />
+
+    <TextView
+        android:id="@+id/txt_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintTop_toBottomOf="@id/textNilaiAkhir"
+        app:layout_constraintLeft_toRightOf="@id/textIndex"/>
+
+    <Button
+        android:id="@+id/buttonInputNilai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INPUT NILAI"
+        android:layout_marginTop="30dp"
+        android:onClick="bukaActivity2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textIndex" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
